@@ -2294,14 +2294,13 @@ class Blackcoin(ScryptMixin, Coin):
     NAME = "BitcoinWSpectrum"
     SHORTNAME = "BWS"
     NET = "mainnet"
-    P2PKH_VERBYTE = bytes.fromhex("25")
-    P2SH_VERBYTES = [bytes.fromhex("85")]
+    P2PKH_VERBYTE = bytes.fromhex("19")
+    P2SH_VERBYTES = [bytes.fromhex("55")]
     WIF_BYTE = bytes.fromhex("99")
     GENESIS_HASH = ('00000198707c071cdb39cc8332eccfe8'
                     '89013ad88b65a63673672b0bda8177e7')
-    DAEMON = daemon.LegacyRPCDaemon
-    TX_COUNT = 7910
-    TX_COUNT_HEIGHT = 4000
-    TX_PER_BLOCK = 2
+    TX_COUNT = 4594999
+    TX_COUNT_HEIGHT = 1667070
+    TX_PER_BLOCK = 3
     RPC_PORT = 22320
-    REORG_LIMIT = 1000
+    REORG_LIMIT = 5000
